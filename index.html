@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Masehi To Hijriah</title>
+</head>
+
+<body class="bg-slate-100">
+    <section class="container md:w-10/12 w-11/12 mx-auto my-5">
+        <div class="mx-auto block text-center">
+            <h1 class="my-7 text-3xl font-semibold font-sans text-center">Masehi - Hijriah Konverter <span class="text-green-600">&</span>
+                Jadwal Sholat</h1>
+           <div class="flex flex-wrap items-start justify-between">
+            <div class="convert  md:w-6/12 w-full">
+                <div class="flex mx-auto w-full justify-center gap-2 flex-row ">
+                    <input type="date"
+                        class="mx-2 date p-2 md:p-3 text-sm md:text-md rounded-lg active:shadow-xl focus:shadow-lg outline-0 shadow-md transition-all duration-75 hover:shadow-xl">
+                    <button
+                        class="konverter mx-2 text-sm md:text-md bg-green-500 text-slate-100 p-2 md:p-3 rounded-lg shadow-md hover:shadow-xl transition-all duration-75 ">Konversi</button>
+                        <div class="loader  my-2 hidden text-center text-green-600">
+                            <i class="text-5xl  z-20 fas fa-circle-notch fa-spin"></i>
+                        </div>
+                    </div>
+               
+                <div
+                class="display w-10/12 flex align-middle items-center justify-center max-h-0  my-4 transition-all mx-auto  text-slate-900 duration-1000 bg-white shadow-lg rounded-md">
+            </div>
+            
+        </div>
+        <div class="jadwalsholat md:w-6/12 w-full">
+            <div class="flex mx-auto w-full justify-center gap-2 flex-row ">
+                <select class="pilihkota mx-2 date md:p-1 text-sm md:text-md rounded-lg active:shadow-xl focus:shadow-lg outline-0 shadow-md transition-all duration-75 hover:shadow-xl" name="" id="">
+                    <option value="" disabled selected>- Pilih Kota -</option>
+                </select>
+                <button class="tampilkanJadwal mx-2 text-sm md:text-md bg-green-500 text-slate-100 p-2 md:p-3 rounded-lg shadow-md hover:shadow-xl transition-all duration-75">Tampilkan Jadwal Sholat</button>
+                <div class="loaderJadwal my-2 hidden text-center text-green-600">
+                    <i class="text-5xl  z-20 fas fa-circle-notch fa-spin"></i>
+                </div>
+                </div>
+                <div
+                class="displayJadwal max-h-0  w-12/12 flex align-middle items-center justify-center  my-4 transition-all mx-auto  text-slate-900 duration-1000 bg-white shadow-lg rounded-md">
+                <table id="tableJadwal" class="m-4 border text-xs md:text-sm border-gray-300 rounded-md">
+
+             
+            </table>
+                
+            </div>
+            </div>
+          
+           </div>
+           
+        </div>
+      
+
+      
+  
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
